@@ -1,0 +1,241 @@
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.83;  
+  color: #858585;
+  font-weight: 400;
+}
+textarea{
+  resize: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(65, 64, 66, 0.5);
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Inter', sans-serif;
+  color: rgba(65, 64, 66, 0.5);
+}
+.container {
+  position: relative;
+  width: 100%;
+  padding-top: 77px;
+  padding-bottom: 133px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;}
+
+  @media screen and (min-width: 393px) {
+    .container {
+        max-width: 393px;
+   }
+  } 
+
+
+  @media screen and (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+      padding-left: 150px;
+      padding-right: 150px;}
+  }
+
+.is-hidden {
+    visibility: hidden;
+}
+#map {
+  height:573px;
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ 
+ 
+}
+    @media screen and (min-width: 1440px) {
+      #map {
+        height: 936px;
+        filter: none;
+      }
+    }
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FBF9F5;
+  color: #1A1A1A;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+.grid-wrap {
+  display: grid;
+  grid-row-gap: 37px;
+}
+
+ @media screen and (min-width: 1440px) {
+   body {
+      background-color: #F2F2F2;
+   }
+   main{  
+    
+    display: grid;
+    grid-template-columns: 630px 470px;
+    grid-column-gap:40px;
+    grid-row-gap: 53px;
+  }
+   .grid-wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 299px 299px;
+    grid-column-gap: 32px;
+    
+   }
+ }
+.main__title{
+  font-family: 'Avenir Next', sans-serif; 
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 0.727;
+  margin-bottom: 13px;
+}
+.main__text{
+  margin-bottom: 31px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+ @media screen and (min-width: 1440px) {
+  .main__text {
+      margin-bottom: 35px;
+   }}
+.search-form {
+  display: grid;
+  grid-gap: 37px ;
+ 
+}
+.search-form__input{
+  border-color: transparent;
+  box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+  border-radius: 8px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  padding-left: 19px;
+  width:100%;  
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(65, 64, 66, 0.5);
+
+}
+.search-form__fortext{
+ height: 338px;
+ vertical-align: text-top;
+}
+.search-form__button{
+  width: 100%;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-family: 'Inter', sans-serif;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.84;
+  text-align: center;
+  margin-bottom: 63px;
+  border-radius: 8px;
+}
+ @media screen and (min-width: 1440px) {
+  .search-form__button {
+    width: 222px;
+   }}
+.select{
+  position: relative; 
+  background-color: #fff;
+  padding: 18px 19px;
+  box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+  border-radius: 8px;
+}
+.select:hover,
+.select:focus{
+  z-index: 1;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.select__header{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  
+}
+.select__body {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  margin-top: 12px;
+  background-color: #fff; 
+  border-radius: 8; 
+  
+
+}
+.select.is-active .select__body{
+  position: absolute;
+  padding: 0px 19px;
+  padding-bottom: 19px;
+  z-index: 1;
+  left: 0px;
+  display: block;
+  width: 100%;
+}
+
+.select__current{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75; 
+color: rgba(65, 64, 66, 0.5);
+
+}
+.select__icon{
+  margin-right: 0;
+}
+.select__item{
+  margin-bottom: 13px;
+}
+
+.select__item:hover,.select__item:focus
+{
+  background: #F2F2F2;
+  padding-left: 13px;
+}
+.select__item:last-child {
+  margin-bottom: 0;
+ 
+}
+.select:hover,
+.search-form__input:hover,
+.search-form__button:hover
+{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.content{
+  width: 224px;
+  padding: 16px 22px;
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+
+  color: #1A1A1A;
+}
+.content__title {
+  font-weight: 700;
+}

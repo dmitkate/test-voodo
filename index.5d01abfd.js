@@ -1,0 +1,2 @@
+!function(){var e=document.querySelectorAll(".select__header"),t=document.querySelectorAll(".select__item");function c(){this.parentElement.classList.toggle("is-active")}function n(){var e=this.innerText,t=this.closest(".select");t.querySelector(".select__current").innerText=e,t.classList.remove(".is-active")}e.forEach((function(e){e.addEventListener("click",c)})),t.forEach((function(e){e.addEventListener("click",n)}))}();
+//# sourceMappingURL=index.5d01abfd.js.map

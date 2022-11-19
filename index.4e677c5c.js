@@ -1,0 +1,2 @@
+!function(){const e=document.querySelectorAll(".select__header"),t=document.querySelectorAll(".select__item");function c(){this.parentElement.classList.toggle("is-active")}function n(){let e=this.innerText,t=this.closest(".select");t.querySelector(".select__current").innerText=e,t.classList.remove(".is-active")}e.forEach((e=>{e.addEventListener("click",c)})),t.forEach((e=>{e.addEventListener("click",n)}))}();
+//# sourceMappingURL=index.4e677c5c.js.map
